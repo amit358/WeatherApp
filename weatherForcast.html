@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcast</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="weatherForcastStyle.css">
+</head>
+<body onload="DefaultScreen()">
+    <div class="container bg-light mt-3" style="height:90vh">
+        <div class="row justify-content-md-center text-center">
+            <h1>Five days weather for :</h1>
+            <div class="col-md-4">
+                <input type="text" class="form-control text-center text-xl-center" id="iCity"><br>
+                <button class="btn btn-warning" onclick="getWeather()"> See weather for</button>
+            </div>
+        </div>
+    
+
+        <div class="row justify-content-md-center border-3 border-warning">
+            <h2 id="dispCity" class="text-center mt-3 text-capitalize"></h2>
+            <div class="col-md-2 text-center">
+                <div class="card m-1 bg-warning p-1">
+                    <p id="day1"></p>
+                    <img src="" id="img1" class="weatherImg" alt="">
+                    <p id="minValue1"></p>
+                    <p id="maxValue1"></p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="card m-1 bg-warning p-1">
+                    <p id="day2"></p>
+                    <img src="" id="img2" class="weatherImg" alt="">
+                    <p id="minValue2"></p>
+                    <p id="maxValue2"></p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="card m-1 bg-warning p-1">
+                    <p id="day3"></p>
+                    <img src="" id="img3" class="weatherImg" alt="">
+                    <p id="minValue3"></p>
+                    <p id="maxValue3"></p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="card m-1 bg-warning p-1">
+                    <p id="day4"></p>
+                    <img src="" id="img4" class="weatherImg" alt="">
+                    <p id="minValue4"></p>
+                    <p id="maxValue4"></p>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <div class="card m-1 bg-warning p-1">
+                    <p id="day5"></p>
+                        <img src="" id="img5" class="weatherImg" alt="">
+                        <p id="minValue5"></p>
+                        <p id="maxValue5"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="weatherForcast.js"></script>
+</body>
+</html>
